@@ -1,3 +1,4 @@
+/* Header styleing start. */
 .container {
   font-family: arial;
 }
@@ -55,6 +56,7 @@ ul li a:hover {
 ul li:last-child a {
   background-color: #39c55e;
   color: #fff;
+  border-radius: 5px;
 }
 
 ul li:last-child a:hover {
@@ -62,4 +64,64 @@ ul li:last-child a:hover {
   transition: .5s;
   background-color: #33b155;
 }
+
+/* Header styleing end. */
+/* Banner style start. */
+.banner {
+  padding: 60px 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e0dee0));
+  background-image: linear-gradient(#fff, #e0dee0);
+}
+
+.banner .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner h2 {
+  color: #39c55e;
+  font-size: 40px;
+}
+
+.banner h2::after {
+  content: "Sign up now to join the list";
+  margin-top: 20px;
+  display: block;
+  color: #2b283a;
+  font-size: 20px;
+}
+
+.banner-tagline {
+  color: #2b283a;
+  display: block;
+}
+
+.banner h2::first-letter, .banner-tagline {
+  text-transform: capitalize;
+}
+
+.banner-heading a {
+  background-color: #39c55e;
+  color: #fff;
+  border-radius: 5px;
+  padding: 12px 15px;
+  display: inline-block;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.banner-heading a:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #33b155;
+}
+
+/* Banner style end. */
 /*# sourceMappingURL=style.css.map */
